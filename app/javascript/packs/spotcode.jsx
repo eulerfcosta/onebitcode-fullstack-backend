@@ -4,12 +4,13 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from '../app';
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <div> Hello SpotCode :)</div>,
+    <App/>,
     document.getElementById('root'),
-  )
+  );
 })
