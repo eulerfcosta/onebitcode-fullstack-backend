@@ -8,3 +8,5 @@ const component HomeScreen = () => {
 
   );
 }
+
+export default HomeScreen;

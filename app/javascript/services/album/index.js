@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const component HomeScreen = () => {
+const component AlbumScreen = () => {
   return (
     <Fragment>
       <div>Album Screen</div>
@@ -8,3 +8,5 @@ const component HomeScreen = () => {
 
   );
 }
+
+export default AlbumScreen;

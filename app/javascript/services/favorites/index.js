@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const component HomeScreen = () => {
+const component FavoritesScreen = () => {
   return (
     <Fragment>
       <div>Favorites Screen</div>
@@ -8,3 +8,5 @@ const component HomeScreen = () => {
 
   );
 }
+
+export default FavoritesScreen;

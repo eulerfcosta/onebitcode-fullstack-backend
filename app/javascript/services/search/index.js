@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const component HomeScreen = () => {
+const component SearchScreen = () => {
   return (
     <Fragment>
       <div>Search Screen</div>
@@ -8,3 +8,5 @@ const component HomeScreen = () => {
 
   );
 }
+
+export default SearchScreen;
