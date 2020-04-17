@@ -15,13 +15,13 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do
     namespace :v1 do
       resources :dashboard, only: :index
+      resources :search, only: :index
+      resources :favorites, only: :index
       resources :categories, only: [:index, :show]
       resources :albums, only: :show do
         resources :recently_heards, only: :create
-        concerns :favoritable, favoritable_type: 'Album'
       end
-      resources :search, only: :index
-      resources :favorites, only: :index
+
       resources :songs, only: [] do
         concerns :favoritable, favoritable_type: 'Song'
       end
