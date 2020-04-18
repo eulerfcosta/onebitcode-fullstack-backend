@@ -49,7 +49,7 @@ const Musics = (props) => {
  useEffect(() => {
    if(AudioRef.current !== null){
      AudioRef.current.pause();
-     AudioRef.current.load()
+     AudioRef.current.load();
      if(playing.id) {
        AudioRef.current.play();
        RecentlyHeardsService.create(playing.album_id);
