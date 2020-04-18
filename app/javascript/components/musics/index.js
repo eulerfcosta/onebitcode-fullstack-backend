@@ -3,6 +3,7 @@ import { Columns, Button } from 'react-bulma-components';
 import styled from 'styled-components';
 
 import Music from './music';
+import RecentlyHeardsService from '../../services/recently_heards';
 
 
 const PlaySequenceButton = styled(Button)`
@@ -51,6 +52,7 @@ const Musics = (props) => {
      AudioRef.current.load()
      if(playing.id) {
        AudioRef.current.play();
+       RecentlyHeardsService.create(playing.album_id);
      }
    }
  },[playing]);
